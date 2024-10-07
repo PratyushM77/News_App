@@ -1,8 +1,9 @@
 import React, { useState} from "react";
+// import { HashRouter as Router } from 'react-router-dom';
 
 import Navbar from "./Navbar";
 import News from "./News";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar';
 
  const App =()=> {
