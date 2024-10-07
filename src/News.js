@@ -25,7 +25,7 @@ const News = (props) => {
     let parsedData = await data.json();
 
     props.setProgress(70);
-    console.log(parsedData);
+ 
     // console.log("Namaskar Mitro!!");
 
     setArticles(parsedData.articles);
@@ -51,6 +51,7 @@ const News = (props) => {
   //   setPage(page - 1);
   //   updateNews();
   // };
+  
 
   const fetchData = async () => {
     setPage(page + 1);
@@ -108,11 +109,12 @@ const News = (props) => {
 News.defaultProps = {
   category: "general",
   pageSize: 8,
+  
 };
 
 News.propTypes = {
   category: PropTypes.string,
-  pageSize: PropTypes.number,
+
 };
 
 export default News;
