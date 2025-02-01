@@ -3,7 +3,7 @@ import React, { useState} from "react";
 
 import Navbar from "./Navbar";
 import News from "./News";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar';
 
  const App =()=> {
@@ -15,7 +15,7 @@ import LoadingBar from 'react-top-loading-bar';
  
     return (
       <>
-        <Router>
+        <BrowserRouter>
           <Navbar />
           <LoadingBar color="#f11946" progress={progress} />
 
@@ -61,7 +61,7 @@ import LoadingBar from 'react-top-loading-bar';
               element={<News setProgress={setProgress} apiKey={apiKey} key="technology" category="technology" />}
             />
           </Routes>
-        </Router>
+        </BrowserRouter>
       </>
     );
   }
